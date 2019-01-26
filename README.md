@@ -6,7 +6,7 @@
 
 ## Description
 
-_A website that counts to a number with you, with fun unexpected additions to the process!_
+_A website that counts to a number with you, with fun unexpected additions to the process! To view on github pages, follow the link: https://milkybot.github.io/week-3-project/_
 
 ## Specifications
 | Specification | Example Input | Example Output |
