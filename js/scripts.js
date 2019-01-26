@@ -4,12 +4,12 @@ $(document).ready(function(){
     event.preventDefault();
     var random = Math.random();
     var countBy = 0;
-    var countNumbers = [ ];
+    var countNumbers = [];
     var countTo = parseInt($("input#number").val());
     var name = $("input#name").val();
 
     if (isNaN(countTo)){
-      alert ("NaN");
+      $("#result").empty().append("T̢̢̞͕̣̻̮̰̪̮̰͢͞H҉̛̤̪̤͖̼̙͕̙̖̥̬̖̞̫̺̯͍̝͎̕A҉̟̟̙̫̘͕̮̪̣̤͕̰̯͚̖̮̦̳̲T̵͘҉̫̬̜͔͖̩̹̙͍̬̙͈̝͚͔̜͖'̴̘̖͎̰̦̙͘͘͜͞Ș̶̢͚̦̩̮̕͝ ̡̼̱̘̞̦̝͈͠N̷̨̢̰̞͉̦̬̝̫̝̥̼̗̫͈͖̹̗̯̯Ò̷̻̣̙̥̜͎̙̙̞̟͉̦̘͎͈T̵̢̞̼̟̪̰̖̦͎̲̺͖̥̙̺̪̦̖̰͟͡ ̡̟̻͖̳̻̮̭̹̣͚̰́͢͜A̴̷̗͚͇̣̥̼̰̻̪̱̺͚ ̟͍̺̱̞̫̬̗̫͔̱̝́V̷̡͈̭̹̭̹̪̱̙̺̭̩́͜ͅA͏̸̡̘̬̙̬̖̩͈̯̠̖̱̪̺̬̳͚̳͕͜͞L̴̵̡̝̤͕̗̩̤̳Ị̸̭̱̞͇͉̖̭̰͜D̷̜̹̞͕̼̙̹̜͜ ̶̢̭͉̟̟̱͉͟N̡̝͕̬̺͙̦͚͚͖̠͚̻̤͔͘U̸̠̼͙̯̘̕͢M̷̧͏̦̩̝̟̭̱̱͉B̴̴̮͉̜̬̼͎̀̕E̸͕͕̥͎͉̘̳̻̦͇͟R҉̡̺̻̟͉̥͇̖̳");
     } else {
       for (i = 0; countBy <= countTo; countBy++) {
         if (countBy%3 === 0 && countBy !== 0) {
@@ -24,6 +24,7 @@ $(document).ready(function(){
             countNumbers.push(countBy);
         }
       }
+      $("#result").empty().append(countNumbers.join(" - "));
     }
     if (0.25 >= random) {
       $("#unhappyface").show();
@@ -51,6 +52,5 @@ $(document).ready(function(){
       $("#unhappiestface").hide();
       $("#unhappyface").hide();
     }
-    alert(countNumbers);
   });
 });
