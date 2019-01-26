@@ -1,3 +1,23 @@
+body {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+h1 {
+  font-family: 'BarrioRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  padding: 5%;
+  margin: 5%;
+  border-color: #ffffff;
+  border-style: solid;
+}
+#counter {
+  color: #ff0000;
+  padding: 5%;
+}
 #unhappyface {
   display: none;
 }
