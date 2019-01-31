@@ -1,6 +1,6 @@
 # _Count with Me_
 
-#### _A website with a built in questionnaire to help you choose a programming language, January/18/2019_
+#### _A website to help you count, January/18/2019_
 
 #### By _**Marie @Milkybot**_
 
